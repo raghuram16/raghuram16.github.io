@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 
 <link rel="stylesheet" href="/w3css/3/w3.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 
@@ -91,11 +91,24 @@ body {
 
   }
    */
-.page-wrap { width: 80%; }
+  
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}  
 
-@media (max-width: 600px) {
-  .resp .page-wrap { width: 100%; }
-}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}  
 
   .header-left {
     float: right;
